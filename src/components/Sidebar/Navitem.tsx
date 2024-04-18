@@ -6,8 +6,6 @@ export interface NavItemProps{
     icon:ElementType
 }
 
-
-
 export function NavItem({title,icon:Icon}:NavItemProps) {
     return(
              <a href="#" className="group flex items-center gap-3 rounded px-3 py-2 hover:bg-violet-50">
