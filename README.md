@@ -4,7 +4,7 @@
     <img width="725rem" src="" alt="imagem">
 </div>
 
-> Para ver o projeto rodando você pode acessar este [Link]().
+> Para ver o projeto rodando você pode acessar este [Link](https://ignite-tailwind-kappa.vercel.app/).
 
 <h2>👨‍🏫 Créditos</h2>
 <p>Este projeto foi realizado nas aulas da Rocketseat 
