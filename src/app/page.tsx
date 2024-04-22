@@ -2,6 +2,8 @@ import { SettingsTabs } from "@/components/SettingsTabs";
 import * as Input from '@/components/Input'
 import * as FileInput from '@/components/Form/FileInput'
 import { BsEnvelope } from "react-icons/bs";
+import { Select } from "@/components/Form/Select";
+
 
 
 export default function Home() {
@@ -69,7 +71,7 @@ export default function Home() {
 
                <div className="grid grid-cols-form gap-3 pt-5">
                   <label htmlFor="country" className="text-sm font-medium text-zinc-700">Country</label>                                            
-                   <div></div>                                          
+                   <Select/>                                     
                </div>
 
                <div className="grid grid-cols-form gap-3 pt-5">
