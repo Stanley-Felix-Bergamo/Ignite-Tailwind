@@ -94,7 +94,7 @@ export default function Home() {
                    </FileInput.Root>
                 </div>
 
-                <div className="flex items-center justify-end gap-2 pt-5mit">
+                <div className="flex items-center justify-end gap-2 pt-5 mit">
                   <button type="button" className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold shadow-sm text-zinc-700 hover:bg-zinc-50">Cancel</button>
                   <button type="button" className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700 ">Save</button>
                 </div>
