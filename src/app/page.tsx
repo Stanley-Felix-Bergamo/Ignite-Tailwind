@@ -4,7 +4,8 @@ import * as FileInput from '@/components/Form/FileInput'
 import { BsEnvelope } from "react-icons/bs";
 import { Select } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/Selectitem";
-
+import { AiOutlineBold,AiOutlineItalic,AiOutlineLink ,AiOutlineOrderedList,AiOutlineMenu } from "react-icons/ai";
+import { Textarea } from "@/components/Form/Textarea";
 
 
 export default function Home() {
@@ -90,7 +91,33 @@ export default function Home() {
                   <label htmlFor="bio" className="text-sm font-medium text-zinc-700">Bio
                   <span className="mt-0.5 block text-sm font-normal text-zinc-500">Write a short introduction.</span>
                   </label>                                     
-                  <div></div>
+                  <div className="space-y-3">
+                    <div className="grid gap-3 grid-cols-2">
+                        <Select placeholder="" defaultValue="normal">
+                            <SelectItem value="normal" text="Normal Text"/>
+                            <SelectItem value="md" text="Markdown"/>
+                        </Select>
+
+                        <div className="flex items-center gap-1">
+                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                              <AiOutlineBold className="h-5 w-5 text-zinc-500"/>
+                          </button>
+                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                              <AiOutlineItalic className="h-5 w-5 text-zinc-500"/>
+                          </button>
+                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                              <AiOutlineLink className="h-5 w-5 text-zinc-500"/>
+                          </button>
+                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                              <AiOutlineMenu className="h-5 w-5 text-zinc-500"/>
+                          </button>
+                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                              <AiOutlineOrderedList className="h-5 w-5 text-zinc-500"/>
+                          </button>
+                        </div>
+                    </div>
+                    <Textarea id="bio" defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development"/>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-form gap-3 pt-5">
