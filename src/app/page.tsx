@@ -3,6 +3,7 @@ import * as Input from '@/components/Input'
 import * as FileInput from '@/components/Form/FileInput'
 import { BsEnvelope } from "react-icons/bs";
 import { Select } from "@/components/Form/Select";
+import { SelectItem } from "@/components/Form/Select/Selectitem";
 
 
 
@@ -71,12 +72,18 @@ export default function Home() {
 
                <div className="grid grid-cols-form gap-3 pt-5">
                   <label htmlFor="country" className="text-sm font-medium text-zinc-700">Country</label>                                            
-                   <Select/>                                     
+                  <Select placeholder="Select a country">
+                    <SelectItem value="br" text="Brazil"/>
+                    <SelectItem value="us" text="United States"/>
+                  </Select>                                     
                </div>
 
                <div className="grid grid-cols-form gap-3 pt-5">
                   <label htmlFor="timezone" className="text-sm font-medium text-zinc-700">Timezone</label>                                            
-                   <div></div>                                          
+                  <Select placeholder="Select a timezone">
+                      <SelectItem value="br" text="America São Paulo (UTC -03:00)"/>
+                      <SelectItem value="us" text="Pacific Standard Time (UTC -08:00)"/>
+                  </Select>                                            
                </div>
 
                 <div className="grid grid-cols-form gap-3 pt-5">
