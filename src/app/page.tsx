@@ -6,6 +6,7 @@ import { Select } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/Selectitem";
 import { AiOutlineBold,AiOutlineItalic,AiOutlineLink ,AiOutlineOrderedList,AiOutlineMenu } from "react-icons/ai";
 import { Textarea } from "@/components/Form/Textarea";
+import { Button } from "@/components/Button";
 
 
 export default function Home() {
@@ -20,8 +21,8 @@ export default function Home() {
                     <span className="text-sm text-zinc-500">Update your photo and personal details here.</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <button type="button" className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold shadow-sm text-zinc-700 hover:bg-zinc-50">Cancel</button>
-                    <button type="button" form="settings"className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700 ">Save</button>
+                    <Button variant="outline" type="button" >Cancel</Button>
+                    <Button variant="primary" type="button" form="settings">Save</Button>
                   </div>
               </div>
               <form id="settings" className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200">
@@ -132,8 +133,8 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center justify-end gap-2 pt-5 mit">
-                  <button type="button" className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold shadow-sm text-zinc-700 hover:bg-zinc-50">Cancel</button>
-                  <button type="button" className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700 ">Save</button>
+                    <Button variant="outline" type="button" >Cancel</Button>
+                    <Button variant="primary" type="button" form="settings">Save</Button>
                 </div>
               </form>
             </div> 
