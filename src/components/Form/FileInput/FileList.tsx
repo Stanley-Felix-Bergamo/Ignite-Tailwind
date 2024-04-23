@@ -2,6 +2,7 @@
 import { formatBytes } from "@/utils/format-bytes";
 import { useFileInput } from "./Root";
 import { AiOutlineCloudUpload,AiOutlineDelete } from "react-icons/ai";
+import { Button } from "@/components/Button";
 
 
 export function FileList(){
@@ -29,9 +30,9 @@ export function FileList(){
                             </div>
                         </div>
 
-                        <button type="button" className="ml-auto rounded-md hover:bg-zinc-50">
+                        <Button type="button" variant="ghost">
                             <AiOutlineDelete className="h-5 w-5 text-zinc-500" />
-                        </button>
+                        </Button>
                     </div>
                 )
             })}

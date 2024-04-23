@@ -100,21 +100,21 @@ export default function Home() {
                         </Select>
 
                         <div className="flex items-center gap-1">
-                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                          <Button type="button" variant="ghost">
                               <AiOutlineBold className="h-5 w-5 text-zinc-500"/>
-                          </button>
-                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                          </Button>
+                          <Button type="button" variant="ghost">
                               <AiOutlineItalic className="h-5 w-5 text-zinc-500"/>
-                          </button>
-                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                          </Button>
+                          <Button type="button" variant="ghost">
                               <AiOutlineLink className="h-5 w-5 text-zinc-500"/>
-                          </button>
-                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                          </Button>
+                          <Button type="button" variant="ghost">
                               <AiOutlineMenu className="h-5 w-5 text-zinc-500"/>
-                          </button>
-                          <button type="button" className="rounded-md p-2 hover:bg-zinc-50">
+                          </Button>
+                          <Button type="button" variant="ghost">
                               <AiOutlineOrderedList className="h-5 w-5 text-zinc-500"/>
-                          </button>
+                          </Button>
                         </div>
                     </div>
                     <Textarea id="bio" defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development"/>
