@@ -42,7 +42,7 @@ export function Sidebar(){
                     <NavItem title="Users" icon={AiOutlineTeam}/>
                 </nav>
                 <UsedSpaceWidth/>
-                <div className="h-px bg-zinc-200"/>
+                <div className="h-px bg-zinc-200 dark:bg-zinc-700"/>
                 <Profile/>
             </Collapsible.Content>
   

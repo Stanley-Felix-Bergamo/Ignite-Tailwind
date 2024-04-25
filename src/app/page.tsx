@@ -12,25 +12,22 @@ import { Button } from "@/components/Button";
 export default function Home() {
   return (
         <>
-            <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
+            <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">Settings</h1>
             <SettingsTabs/>
             <div className="mt-6 flex flex-col">
-              <div className="flex items-center justify-between gap-4 border-b border-zinc-200 pb-6 lg:flex-row lg:items-center">
-
+              <div className="flex items-center justify-between gap-4 border-b border-zinc-200 dark:border-zinc-700 pb-6 lg:flex-row lg:items-center">
                   <div className="space-y-1">
-                    <h2 className="text-lg font-medium text-zinc-900">Personal info</h2>
-                    <span className="text-sm text-zinc-500">Update your photo and personal details here.</span>
+                    <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">Personal info</h2>
+                    <span className="text-sm text-zinc-500 dark:text-zinc-400">Update your photo and personal details here.</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Button variant="outline" type="button" >Cancel</Button>
                     <Button variant="primary" type="button" form="settings">Save</Button>
                   </div>
               </div>
-              <form id="settings" className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200">
-
-
+              <form id="settings" className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200 dark:divide-zinc-700">
                 <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form">
-                  <label htmlFor="firstName" className="text-sm font-medium text-zinc-700">Name</label>       
+                  <label htmlFor="firstName" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Name</label>       
 
                   <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2 ">
                     <Input.InputRoot>
@@ -38,7 +35,7 @@ export default function Home() {
                     </Input.InputRoot>
 
                    <div className="flex flex-col gap-3 lg:block">
-                       <label htmlFor="lastName" className="text-sm font-medium text-zinc-700 lg:sr-only">Last name</label>       
+                       <label htmlFor="lastName" className="text-sm font-medium text-zinc-700  dark:text-zinc-300 lg:sr-only">Last name</label>       
 
                       <Input.InputRoot>
                          <Input.InputControl defaultValue='Bergamo'/>

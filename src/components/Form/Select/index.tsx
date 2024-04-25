@@ -13,7 +13,7 @@ export interface SelectProps extends SelectPrimitive.SelectProps{
 export function Select({children,placeholder,...props}:SelectProps) {
 return(
          <SelectPrimitive.Root {...props}>
-             <SelectPrimitive.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholdder]:text-zinc-600">
+             <SelectPrimitive.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholdder]:text-zinc-600 dark:border-zinc-700 dark:bg-zinc-800 dark:focus-within:border-violet-500 dark:focus-within:ring-violet-500/20">
                <SelectPrimitive.Value placeholder={placeholder} className="text-black"/>
                 <SelectPrimitive.Icon>
                     <AiOutlineDown className ="h-4 w-4 text-zinc-500" />
