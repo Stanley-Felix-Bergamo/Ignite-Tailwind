@@ -1,7 +1,7 @@
 # Ignite Tailwind <img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Em andamento &color=red&style=for-the-badge"/>
 
 <div align="center" >
-    <img width="725rem" src="" alt="imagem">
+    <img width="725rem" src="https://servidor-estaticos-ten.vercel.app/tailwind.png" alt="imagem">
 </div>
 
 > Para ver o projeto rodando você pode acessar este [Link](https://ignite-tailwind-kappa.vercel.app/).
